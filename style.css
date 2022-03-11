@@ -156,7 +156,7 @@ body {
 }
 
 .card:hover {
-  /*background: var(--background-color-projetos);
+  /*background: #d99;
   color: var(--color-card-hover);*/
   box-shadow: var(--box-shadow-card-hover);
   animation: expandir 0.4s linear forwards;
@@ -185,6 +185,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .input-url {
@@ -212,6 +213,10 @@ body {
 
 .input-button:hover {
   box-shadow: var(--box-shadow-card-hover);
+}
+
+#urlFalha {
+  display: none;
 }
 
 .container-videos {
@@ -284,8 +289,8 @@ video {
     flex-wrap: wrap;
   }
 
-  .container-url {
-    flex-direction: row;
+  .input-url {
+    width: 50rem;
   }
 
   .container-videos {

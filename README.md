@@ -42,6 +42,8 @@
 
 ![VIra-lataflix](https://user-images.githubusercontent.com/68918326/157784090-c6cbea9b-a926-4ac1-a67e-f866c119b8e7.gif)
 
+![VIra-lataflix-phone](https://user-images.githubusercontent.com/68918326/157973848-17aec059-9ac7-4aca-8774-8ee6eb9a8ec5.gif)
+
 
 <hr>
 <h3 align="center">🎖️PROJETO FINALIZADO - IMERSÃO DEV ALURA🎖️</h3>
