@@ -1,4 +1,4 @@
-![Conversor_moeda_banner](https://user-images.githubusercontent.com/68918326/157361600-063cfb5b-ffb5-4084-984f-586fabac9fde.PNG)
+![Vira-lataflix_banner](https://user-images.githubusercontent.com/68918326/157784258-f3a14645-8d67-4e71-89d4-38559ae545e9.PNG)
 
 <hr>
 <h3 align="center">🎖️PROJETO FINALIZADO - IMERSÃO DEV ALURA🎖️</h3>
@@ -6,7 +6,7 @@
 
 <h1 align="center">VIRA-LATAFLIX</h1>
 <br>
-<h2 align="center"><a href="https://romulo-sobrinho.github.io/Conversor-moeda/" target="__blank">Clique aqui e acesse o preview web</a></h2>
+<h2 align="center"><a href="https://romulo-sobrinho.github.io/Vira-lataflix/" target="__blank">Clique aqui e acesse o preview web</a></h2>
 <br>
 
 <p align="center">Projeto criado após o 4º dia da Imersão DEV Alura</p>
@@ -40,7 +40,7 @@
   
 ## Preview
 
-![Conversor_moeda](https://user-images.githubusercontent.com/68918326/157362843-556a7a99-c12e-4b0e-b8d1-5867e1dabef9.gif)
+![VIra-lataflix](https://user-images.githubusercontent.com/68918326/157784090-c6cbea9b-a926-4ac1-a67e-f866c119b8e7.gif)
 
 
 <hr>
