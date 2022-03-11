@@ -1,0 +1,315 @@
+/*Nunito*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,900;1,300&display=swap');
+
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+/*Ubuntu*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+/*Lora*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+
+/*Merriweather*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+
+
+:root {
+  --max-width: 1200px;
+  --text-menu: 'Lora', serif;
+  --text-h2: 'Merriweather Sans', sans-serif;
+  --text-name: 'Ubuntu', sans-serif;
+  --text-card: 'Nunito', sans-serif;
+  --text-header: 'Ubuntu', sans-serif;
+  --text-primary: 'Nunito', sans-serif;
+  --text-button: 'Roboto', sans-serif;
+  --text-title-page: 'Nunito', sans-serif;
+  --font-size-html: 62.5%;
+  --font-size-body: 1.6rem;
+  --font-size-header: clamp(2rem, 3vw + 0.1rem, 3rem);
+  --font-size-title-page: clamp(2rem, 2.5vw + 0.1rem, 3rem);
+  --color-title-page: #000000;
+  --color-header: #FFFFFF;
+  --color-card: rgb(0, 0, 0);
+  --color-card-hover: #FFFFFF;
+  --color-card-resultado: #000000;
+  --color-card-button: #FFFFFF;
+  --background-color-btn-banner: linear-gradient(225deg,#FFAF00 0%,#FE4D1B 48.15%,#E70154 100%);
+  --background-color-btn-projetos: linear-gradient(29.83deg,#1F95FD 0%,#4FE8E4 100%);
+  --background-color-projetos: linear-gradient(29.83deg,#e20913 0%,#790c00 100%);/*#8E0E00*/
+  --background-color-gray: #f9fbfc;
+  --background-color-card: #f9fbfc;
+  --box-shadow-card: 5px 5px 15px 1px #C0C5CE;
+  --box-shadow-card-hover: 0 0 10px #e20913;
+  --border-radius: 0.8rem;
+  --padding-sessao-header: 4rem 1rem 1rem 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  font-size: var(--font-size-html);
+}
+
+body {
+  background-color: pink;
+  font-size: var(--font-size-body);
+  font-family: var(--text-primary);
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template: "header"   auto
+                 "main"     1fr  
+                 "footer"   auto
+                / 1fr;
+}
+
+.header {
+  background: var(--background-color-projetos);
+  grid-area: header;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container-header h1 {
+  font-size: var(--font-size-header);
+  color: var(--color-header);
+}
+
+.img-logo {
+  height: 3rem;
+  animation: girar 1s linear;
+}
+
+.img-alura {
+  height: 2rem;
+}
+
+.main {
+  background: var(--background-color-gray);
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 2rem;
+}
+
+.main > h2 {
+  font-size: var(--font-size-title-page);
+  font-family: var(--text-h2);
+  color: var(--color-title-page);
+}
+
+.main #img-flix {
+  height: 7rem;
+}
+
+.main .container-categorias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main .container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  width: 20rem;
+  height: 8rem;
+  cursor: pointer;
+  padding: 1.2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--background-color-card);
+  box-shadow: var(--box-shadow-card);
+  color: var(--color-card);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.6s;
+}
+
+.card:hover {
+  /*background: var(--background-color-projetos);
+  color: var(--color-card-hover);*/
+  box-shadow: var(--box-shadow-card-hover);
+  animation: expandir 0.4s linear forwards;
+}
+
+.img-icone {
+  height: 6rem;
+  transition: all 0.6s;
+}
+
+.card:hover .img-icone {
+  filter: grayscale(1);
+}
+
+.container-url {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.input-url {
+  width: 28rem;
+  height: 4rem;
+  text-align: center;
+  background-color: #f9fbfc;
+  color: #000000;
+  border-radius:var(--border-radius);
+  box-shadow: var(--box-shadow-card);
+  border: 1px solid #e20913;
+}
+
+.input-button {
+  width: 12rem;
+  height: 4rem;
+  text-align: center;
+  color: var(--color-card-button);
+  background: var(--background-color-projetos);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-card);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.input-button:hover {
+  box-shadow: var(--box-shadow-card-hover);
+}
+
+.container-videos {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+iframe {
+  width: 28rem;
+  height: 15rem;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-card);
+}
+
+video {
+  width: 28rem;
+  height: 15rem;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-card);
+}
+
+.footer {
+  background: var(--background-color-projetos);
+  grid-area: footer;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-footer {
+  height: 4rem;
+}
+
+
+/*Animações*/
+@keyframes expandir {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .main #img-flix {
+    height: 13rem;
+  }
+
+  .main .container-card {
+    flex-wrap: wrap;
+  }
+
+  .container-url {
+    flex-direction: row;
+  }
+
+  .container-videos {
+    flex-direction: row;
+  }
+
+  
+
+  /*
+  .main {
+    justify-content: space-evenly;
+    gap: 0rem;
+  }
+
+  .main .container-categorias {
+    gap: 3rem;
+  }
+
+  .main .container-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  */
+}

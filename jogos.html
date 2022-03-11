@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor Moeda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img class="img-logo" src="./images/logo.png" alt="Imagem da logo do portilólio front-end developer">
+    <div class="container-header">
+      <img class="img-alura" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="Imagem da logo da imersão dev alura">
+      <h1>VIRA-LATAFLIX</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <img id="img-flix" src="./images/Vira-LataFLIX.png" alt="Imagem logo Vira-lataflix">
+    <div class="container-url">
+      <input type="url" name="url" id="url" class="input-url" placeholder="Digite a URL do youtube">
+      <div class="container-button">
+        <input type="button" id="btn-adicionar" class="input-button" onclick="adicionar()" value="ADICIONAR">
+        <a href="./index.html"><input type="button" id="btn-voltar" class="input-button" value="VOLTAR"></a>
+      </div>
+    </div>
+    <div id="div-videos" class="container-videos">
+    </div>
+
+    
+  </main>
+
+  <footer class="footer">
+    <img class="img-footer" src="./images/rss-footer.png" alt="Imagem logomarca">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
